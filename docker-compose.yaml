@@ -1,0 +1,10 @@
+version: "3.7"
+
+services:
+  app:
+    build: .
+    ports:
+      - 80:80
+    working_dir: /code
+    volumes:
+      - ./:/code
